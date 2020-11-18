@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bonjour !</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+        <div class="main-container" >
+            <div class="mid-container">
+                <div class="flex-container" >
+                <div class="menu item1">Sign Up</div>
+                <div class="menu item2">Login</div>
+            </div>
+            <div class="image-container">
+                <img id="banner-image" src="https://yt3.ggpht.com/a/AATXAJwViitdTQ2CCCMru6UKV8--v83iE0q0pQYdKYZLew=s900-c-k-c0x00ffffff-no-rj">
+                <div class="banner-title">Purwadhika</div>
+                <div class="banner-subtitle">Digital Technology School</div>
+                <div class="register">
+                    <div class="signup">Sign Up</div>
+                    <div class="bannerName">Username <br>
+                        <input id="username" name="username" type="text" placeholder="Username"><br><br>
+                    </div>
+                    <div class="bannerName">Email <br>
+                        <input id="email" name="email" type="email" placeholder="Email"><br><br>
+                    </div>
+                    <div class="bannerName">Password <br>
+                        <input id="password" name="password" type="text" placeholder="Password"><br><br>
+                    </div>
+                    <div class="bannerName">Confirm Password <br>
+                        <input id="confirmPass" name="confirmPassword" type="text" placeholder="Confirm Password"><br>
+                    </div>
+                        <p><input style="height: 30px;" type="button" value="Sign Up" onclick="signup()"></p>
+            </div>
+            </div>
+            
+            </div>
+        </div>            
+</body>
+<script>
+    let logged;
+
+    function signup(){
+        var username = document.getElementById("username").value;
+        var email = document.getElementById("email").value;
+        var password = document.getElementById("password").value;
+        var confirmPass = document.getElementById("confirmPass").value;
+
+        if(password == confirmPass){
+            alert("Register Berhasil")
+        }else{
+            alert("Invalid Password")
+        }
+    }
+</script>
+</html>

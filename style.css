@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+
+.main-container {
+    margin: auto;
+    margin-top: 100px;
+    width: 500px;
+    background-color:white;
+}
+
+.mid-container {
+    background-color: green;
+}
+
+.menu{
+    width: 300px;
+    color: black;
+    font-size: 1.5em;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.flex-container{
+    background-color: white;
+    margin : auto;
+    width: 100%;
+    display: flex;
+}
+
+.signup {
+    text-align: center;
+    padding-bottom: 30px;
+    font-size: 1.5em;
+}
+
+.register {
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    background-color: white;
+}
+
+.image-container{
+    display: flex;
+    position: relative;
+    text-align: center;
+}
+#banner-image{
+    width: 100%;
+    opacity: 0.8;
+}
+
+.banner-title{
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    font-size: 3em;
+}
+
+.banner-subtitle{
+    position: absolute;
+    top: 70%;
+    left: 15%;
+    font-size: 2em;
+}
