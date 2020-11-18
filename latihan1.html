@@ -8,7 +8,6 @@
 </head>
 <body>
         <div class="main-container" >
-            <div class="mid-container">
                 <div class="flex-container" >
                 <div class="menu item1">Sign Up</div>
                 <div class="menu item2">Login</div>
@@ -26,21 +25,19 @@
                         <input id="email" name="email" type="email" placeholder="Email"><br><br>
                     </div>
                     <div class="bannerName">Password <br>
-                        <input id="password" name="password" type="text" placeholder="Password"><br><br>
+                        <input id="password" name="password" type="password" placeholder="Password"><br><br>
                     </div>
                     <div class="bannerName">Confirm Password <br>
-                        <input id="confirmPass" name="confirmPassword" type="text" placeholder="Confirm Password"><br>
+                        <input id="confirmPass" name="confirmPassword" type="password" placeholder="Confirm Password"><br><br>
                     </div>
                         <p><input style="height: 30px;" type="button" value="Sign Up" onclick="signup()"></p><br><br><br>
                     <div class="copyright">&copyPurwadhika</div>
                 </div>
             </div>
-            
-            </div>
-        </div>            
+        </div>     
+      
 </body>
 <script>
-    let logged;
 
     function signup(){
         var username = document.getElementById("username").value;

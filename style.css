@@ -11,10 +11,6 @@ body {
     background-color:white;
 }
 
-.mid-container {
-    background-color: green;
-}
-
 .menu{
     width: 300px;
     color: black;
@@ -73,3 +69,4 @@ body {
     text-align: right;
     font-size: 12px;
 }
+
