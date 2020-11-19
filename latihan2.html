@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan 2</title>
+</head>
+<style>
+    .content-container {
+        display: flex;
+        /* flex-direction: row; */
+        margin: 20px 0;
+        align-items: baseline;
+        height: 500px;
+    }
+    .square {
+        width: 200px;
+    }
+    .tomato1 {
+        background-color: tomato;
+    }
+    
+    .tomato1:hover {
+        background-color: red;
+        color: tomato;
+        border: 0.5px solid tomato;
+    }
+    .tomato2 {
+        background-color: tomato;
+    }
+    
+    .tomato2:hover {
+        background-color: red;
+        color: tomato;
+        border: 0.5px solid tomato;
+    }
+    .tomato3 {
+        background-color: tomato;
+    }
+    
+    .tomato3:hover {
+        background-color: red;
+        color: tomato;
+        border: 0.5px solid tomato;
+    }
+    .tomato4 {
+        background-color: tomato;
+    }
+    
+    .tomato4:hover {
+        background-color: red;
+        color: tomato;
+        border: 0.5px solid tomato;
+    }
+    .tomato5 {
+        background-color: tomato;
+    }
+    
+    .tomato5:hover {
+        background-color: red;
+        color: tomato;
+        border: 0.5px solid tomato;
+    }
+    .space-around {
+        justify-content: space-around;
+    }
+</style>
+<body>
+    <div class="content-container space-around" id="output">
+            <div class="square tomato1" id="box1" style="height: 20%" onclick="box1()"></div>
+            <div class="square tomato2" id="box2" style="height: 40%" onclick="box2()"></div>
+            <div class="square tomato3" id="box3" style="height: 10%" onclick="box3()"></div>
+            <div class="square tomato4" id="box4" style="height: 30%" onclick="box4()"></div>
+            <div class="square tomato5" id="box5" style="height: 50%" onclick="box5()"></div>
+    </div>
+    <div>
+        <button id="sort" onclick="sort()">
+            Sort
+        </button>
+        <button id="back" onclick="back()">
+            Back
+        </button>
+    </div>
+</body>
+<script>
+    let arr = [];
+    let newarr = [];
+
+    function box1() {
+        var height = document.getElementById("box1").style.height;
+            alert(`${height}`)
+        } 
+    function box2() {
+        var height = document.getElementById("box2").style.height;
+            alert(`${height}`)
+        } 
+    function box3() {
+        var height = document.getElementById("box3").style.height;
+            alert(`${height}`)
+        } 
+    function box4() {
+        var height = document.getElementById("box4").style.height;
+            alert(`${height}`)
+        } 
+    function box5() {
+        var height = document.getElementById("box5").style.height;
+            alert(`${height}`)
+        } 
+
+    function sort(){
+
+        var height1 = parseInt(document.getElementById("box1").style.height);
+        var height2 = parseInt(document.getElementById("box2").style.height);
+        var height3 = parseInt(document.getElementById("box3").style.height);
+        var height4 = parseInt(document.getElementById("box4").style.height);
+        var height5 = parseInt(document.getElementById("box5").style.height);
+
+            arr.push(height1,
+            height2,
+            height3,
+            height4,
+            height5,
+            );
+            newarr.push(height1,
+            height2,
+            height3,
+            height4,
+            height5,
+            );
+           
+            arr = arr.sort((a,b) => a - b);
+            console.log(arr)
+        change1()
+        arr = []
+    }
+
+    function back(){
+        change()
+        newarr = []
+    }
+
+    function change1() {
+        return document.getElementById("box1").style.height = `${arr[0]}%`,
+        document.getElementById("box2").style.height = `${arr[1]}%`,
+        document.getElementById("box3").style.height = `${arr[2]}%`,
+        document.getElementById("box4").style.height = `${arr[3]}%`,
+        document.getElementById("box5").style.height = `${arr[4]}%`;
+
+    }
+    function change(){
+        return document.getElementById("box1").style.height = `${newarr[0]}%`,
+        document.getElementById("box2").style.height = `${newarr[1]}%`,
+        document.getElementById("box3").style.height = `${newarr[2]}%`,
+        document.getElementById("box4").style.height = `${newarr[3]}%`,
+        document.getElementById("box5").style.height = `${newarr[4]}%`;
+    }
+</script>
+</html>
